@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Wing Suit Game</title>
+        <link rel="stylesheet" type="text/css" href="./index.css">
+    </head>
+    <body>
+        <div class="my-text">
+            This is some placeholder text<br>
+            I can write anything I want here<br>
+            I'll <b>bold</b> something<br>
+            I'll <i>turn something italic</i><br>
+            <hr>
+            Maybe I'll add a line
+            <h1>Maybe a title as well</h1>
+            <h2>or a smaller title</h2>
+        </div>
+        <div class="game-holder">
+            <canvas id="game"></canvas>
+            <div class="pause-screen">Paused</div>
+            <div class="ui-score">
+                <div class="ui-score-row" id="best-score"></div>
+                <div class="ui-score-row" id="curr-score"></div>
+            </div>
+            <div class="game-screen" id="game-begin">
+                <div class="title">Wing Suit Game</div>
+                <div class="button" id="start-game">Start Game</div>
+                <div class="instructions">
+                    <div class="instructions-title">How To</div>
+                    Avoid the bombs<br>
+                    Collect the coins<br>
+                    Use ^<`> or W,A,S,D to move<br>
+                    the player up, left, down and right<br>
+                    Press P to pause and reusme the game
+                </div>
+            </div>
+            <div class="game-screen" id="game-end">
+                <div class="title">Game Over</div>
+                <div class="score">Score:</div>
+                <div class="best-score">Best Score:</div>
+                <div class="button" id="play-again">Play Again</div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./index.js"></script>
+    </body>
+</html>
